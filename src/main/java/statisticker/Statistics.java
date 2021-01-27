@@ -12,9 +12,9 @@ public class Statistics
 	 */
 	public static Stats getStatistics(List<Float> numbers) {
 		
-		Float max = (float) numbers.stream().mapToDouble(num->num).max().orElse(Double.NaN); 
-		Float min = (float) numbers.stream().mapToDouble(num->num).min().orElse(Double.NaN);
-		Float average = (float) numbers.stream().mapToDouble(num->num).average().orElse(Double.NaN);
+		Float max = (float) numbers.stream().mapToDouble(num->num).max().orElse(Float.NaN); 
+		Float min = (float) numbers.stream().mapToDouble(num->num).min().orElse(Float.NaN);
+		Float average = (float) numbers.stream().mapToDouble(num->num).average().orElse(Float.NaN);
 		return new Stats(max, min, average);
 	}
     
